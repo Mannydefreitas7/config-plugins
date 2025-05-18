@@ -1,14 +1,9 @@
 {
-  "name": "@config-plugins/repo",
+  "name": "@fool/react-native-branch",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "expo-yarn-workspaces check-workspace-dependencies",
     "gen": "ts-node ./scripts/generate-plugin.ts",
-    "update-issue-template": "ts-node ./scripts/gh-issues-config.ts",
-    "update-dependabot-config": "ts-node ./scripts/update-dependabot-config.ts",
-    "start": "lerna run build --parallel -- --watch",
-    "prepare": "lerna run prepare --parallel"
   },
   "workspaces": [
     "apps/*",
@@ -28,7 +23,6 @@
     "expo-yarn-workspaces": "^2.3.2",
     "js-yaml": "^4.1.0",
     "memfs": "^3.4.4",
-    "lerna": "3.4.1",
     "prettier": "^3",
     "prompts": "^2.4.1",
     "remark-cli": "^9.0.0",
